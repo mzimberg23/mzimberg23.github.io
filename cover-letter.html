@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSN Nursing Portfolio | Meagan Zimberg</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function currentDate() {
+      const now = new Date();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0');
+      const year = now.getFullYear();
+      return `${month}/${day}/${year}`;
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <p class="eyebrow">BSN Nursing Portfolio</p>
+        <h1>Meagan Zimberg</h1>
+      </div>
+      <button class="nav-toggle" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+      <nav id="main-navigation" class="navigation">
+        <a href="./index.html">Welcome</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./cover-letter.html" class="active">Cover Letter</a>
+        <a href="./recommendation.html">Recommendation Request</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="cover-letter" class="section letter-section">
+      <div class="container">
+        <p class="section-label">Cover Letter</p>
+        <h2>
+          Professional Cover Letter
+          <button class="print-button" onclick="window.print()">
+            <img src="printer.png" alt="Print Now"/>
+          </button>
+        </h2>
+        <article class="letter-card">
+          <p class="letter-meta">Date: <script>document.write(currentDate());</script></p>
+          <p class="letter-meta">Recipient: [Employer Name], [Position Title]<br>
+          Facility: [Facility Name]</p>
+
+          <p>Dear [Hiring Manager Name],</p>
+
+          <p>I am writing to express my interest in the [Position Title] position at [Facility Name]. As a soon-to-be BSN-prepared registered nurse with strong clinical experience and a patient-centered focus, I am eager to contribute to a team committed to high-quality care and positive patient outcomes.</p>
+
+          <p>During my nursing education at [School], I completed clinical rotations in medical-surgical, maternal-child, and community health settings. I developed solid assessment skills, effective communication with patients and families, and the ability to collaborate with interdisciplinary teams. I am confident in my ability to support safe care delivery while advocating for individualized patient needs.</p>
+
+          <p>My clinical experience includes medication administration, wound care, patient education, and care coordination. I value clear communication, professionalism, and empathetic support when working with patients from diverse backgrounds. I also bring a strong work ethic and a commitment to continuous learning.</p>
+
+          <p>I am excited about the opportunity to join [Facility Name] because of your organization’s reputation for compassionate care and collaborative practice. I would welcome the chance to discuss how my education, clinical preparation, and dedication to nursing excellence can contribute to your team.</p>
+
+          <p>Thank you for considering my application. I look forward to the opportunity to speak with you.</p>
+
+          <p>Sincerely,<br>
+          Meagan Zimberg</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Prepared for nursing school and professional application use.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSN Nursing Portfolio | Meagan Zimberg</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function currentDate() {
+      const now = new Date();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0');
+      const year = now.getFullYear();
+      return `${month}/${day}/${year}`;
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <p class="eyebrow">BSN Nursing Portfolio</p>
+        <h1>Meagan Zimberg</h1>
+      </div>
+      <button class="nav-toggle" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+      <nav id="main-navigation" class="navigation">
+        <a href="./index.html" class="active">Welcome</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./cover-letter.html">Cover Letter</a>
+        <a href="./recommendation.html">Recommendation Request</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="welcome" class="section welcome-section">
+      <div class="container">
+        <p class="section-label">Welcome</p>
+        <h2>Future BSN-Prepared Registered Nurse</h2>
+        <span class="intro">
+            <img src="meagan.jpg" alt="Meagan Zimberg" class="welcome-image">
+            <p class="intro-copy">Welcome to my nursing portfolio. I am a dedicated and patient-centered nursing graduate prepared to begin professional practice. This portfolio highlights my qualifications, clinical education, work experience, professional goals, and readiness to deliver safe, compassionate care.</p>
+        </span>
+        <div class="summary-cards">
+          <article>
+            <h3>Professional Focus</h3>
+            <p>Provide evidence-based nursing care with empathy, strong critical thinking, and clear communication.</p>
+          </article>
+          <article>
+            <h3>Education</h3>
+            <p>BSN graduate with clinical experience in medical-surgical, maternal-child, and community health settings.</p>
+          </article>
+          <article>
+            <h3>Career Goal</h3>
+            <p>Join a collaborative healthcare team where I can continue learning and support positive patient outcomes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Prepared for nursing school and professional application use.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

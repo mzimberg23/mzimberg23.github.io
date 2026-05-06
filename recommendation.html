@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSN Nursing Portfolio | Meagan Zimberg</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function currentDate() {
+      const now = new Date();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0');
+      const year = now.getFullYear();
+      return `${month}/${day}/${year}`;
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <p class="eyebrow">BSN Nursing Portfolio</p>
+        <h1>Meagan Zimberg</h1>
+      </div>
+      <button class="nav-toggle" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+      <nav id="main-navigation" class="navigation">
+        <a href="./index.html">Welcome</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./cover-letter.html">Cover Letter</a>
+        <a href="./recommendation.html" class="active">Recommendation Request</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="recommendation" class="section letter-section">
+      <div class="container">
+        <p class="section-label">Recommendation Request</p>
+        <h2>
+          Letter of Recommendation Request
+          <button class="print-button" onclick="window.print()">
+            <img src="printer.png" alt="Print Now"/>
+          </button>
+        </h2>
+        <article class="letter-card">
+          <p class="letter-meta">Date: <script>document.write(currentDate());</script></p>
+          <p class="letter-meta">Recipient: <span id="recipient-name">[Recipient Name]</span>, <span id="recipient-role">[Recipient Role]</span></p>
+
+          <p>Dear <span id="recipient-greeting">[Recipient Name]</span>,</p>
+
+          <p>I hope you are well. I am writing to request a letter of recommendation as I apply for a nursing position at <span id="facility-name">[Facility Name]</span> following completion of my Bachelor of Science in Nursing. I greatly value your insight and your experience working with me in the clinical setting.</p>
+
+          <p>Your recommendation would be especially meaningful because you have observed my clinical judgment, teamwork, and patient-centered care. If you are able, I would be grateful if you could mention my strengths in communication, professionalism, and ability to support safe, compassionate care.</p>
+
+          <p>The deadline for the application is <span id="deadline-date">[Deadline Date]</span>. Please let me know if you are available to provide a recommendation, and I will promptly share any details or materials you may need.</p>
+
+          <p>Thank you for considering my request and for your support during my nursing education.</p>
+
+          <p>Sincerely,<br>
+          Meagan Zimberg</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section form-section no-print">
+      <div class="container">
+        <p class="section-label">Customize letter</p>
+        <h2>Update Recommendation Text</h2>
+        <form class="customization-form" id="recommendation-form" autocomplete="off">
+          <div class="form-grid">
+            <label class="form-field" for="recipient-name-input">
+              <span>Recipient Name</span>
+              <input id="recipient-name-input" type="text" placeholder="Recipient Name">
+            </label>
+            <label class="form-field" for="recipient-role-input">
+              <span>Recipient Role</span>
+              <input id="recipient-role-input" type="text" placeholder="Recipient Role">
+            </label>
+            <label class="form-field" for="facility-name-input">
+              <span>Facility Name</span>
+              <input id="facility-name-input" type="text" placeholder="Facility Name">
+            </label>
+            <label class="form-field" for="deadline-date-input">
+              <span>Deadline Date</span>
+              <input id="deadline-date-input" type="text" placeholder="Deadline Date">
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Prepared for nursing school and professional application use.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

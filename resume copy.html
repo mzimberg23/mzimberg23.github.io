@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSN Nursing Portfolio | Meagan Zimberg</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function currentDate() {
+      const now = new Date();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0');
+      const year = now.getFullYear();
+      return `${month}/${day}/${year}`;
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <p class="eyebrow">BSN Nursing Portfolio</p>
+        <h1>Meagan Zimberg</h1>
+      </div>
+      <button class="nav-toggle" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+      <nav id="main-navigation" class="navigation">
+        <a href="./index.html">Welcome</a>
+        <a href="./resume.html" class="active">Resume</a>
+        <a href="./cover-letter.html">Cover Letter</a>
+        <a href="./recommendation.html">Recommendation Request</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="resume" class="section resume-section">
+      <div class="container">
+        <p class="section-label">Resume</p>
+        <h2>
+          Professional Resume
+          <button class="print-button" onclick="window.print()">
+            <img src="printer.png" alt="Print Now"/>
+          </button>
+        </h2>
+        <article class="resume-card">
+          <header class="resume-header">
+            <div>
+              <h3>Meagan Zimberg</h3>
+              <p>Future BSN-Prepared Registered Nurse</p>
+            </div>
+            <div class="contact-info">
+              <p>Email: <a href="mailto:mzimberg23@outlook.com">mzimberg23@outlook.com</a></p>
+              <p>Phone: (973) 944-8709</p>
+              <p>Location: Parsippany, NJ</p>
+            </div>
+          </header>
+
+          <section>
+            <h4>Professional Summary</h4>
+            <p>Compassionate BSN-prepared Registered Nurse with Emergency Department experience. Caring for adult and pediatric patients in a high-acuity setting. Skilled in triage, pateint assessment, prioritization, medication administration, interdisciplinary communication, and safe patient-centerd care.  </p>
+          </section>
+
+          <section>
+            <h4>Education</h4>
+            <p><strong>William Paterson University</strong>, Bachelor of Science in Nursing (BSN)<br>
+            Graduation: May 2026</p>
+            <p><strong>County College of Morris</strong>, Associates in Applied Science (AAS)<br>
+            Graduation: May 2022</p>
+          </section>
+
+          <section>
+            <h4>Licensure and Certifications</h4>
+            <ul>
+              <li>RN licensure: July 2022</li>
+              <li>Basic Life Support (BLS) American Heart Association - expires 12/2026</li>
+              <li>Advanced Life Support (ALS) American Heart Association - expires 12/2026</li>
+              <li>Pediatric Advanced Life Support (PALS) American Heart Association - expires 10/2027</li>
+              <li>Trauma Nurse Core Corse (TNCC) Emergency Nurses Association - expires 03/31/2030</li>
+        
+            </ul>
+          </section>
+
+          <section>
+            <h4>Clinical Experience</h4>
+            <ul>
+              <li>Provide safe and compassionate nursing care to patients in a high-volume emergency department </li>
+              <li>Perform rapid assessment, recognize changes in patient condition, and prioritize care based on acuity</li>
+              <li>Administer medications, monitor responce, and document patient care accurately in the EMR </li>
+              <li>Collaberate with physicians, advance practice providers, nurses, technicians, and ancillary staff</li>
+              <li>Communicate effectively with pateints and families during stressful and urgent situations </li>
+              <li>Support patient safety through fall prevention, medication safety, infection control, and accurate handoff communication </li>
+              <li>Assist with pateint flow, discharges, transfers, ans coordinateion of care during increased patient volume </li>
+              <li>Demonstrate professionalism, accountability, ans cultural sensitivity when careing for diverse patient population</li>
+            
+            </ul>
+          </section>
+
+          <section>
+            <h4>Work Experience</h4>
+            <ul>
+              <li><strong>Patient Care Assistant</strong>, [Employer Name] — supported nursing staff with vital signs, patient comfort, care coordination, and family communication.</li>
+              <li><strong>Volunteer Health Advocate</strong>, [Organization Name] — assisted with community outreach, patient education, and clinic flow.</li>
+            </ul>
+          </section>
+
+          <section class="two-column">
+            <div>
+              <h4>Skills</h4>
+              <ul>
+                <li>Patient assessment</li>
+                <li>Clinical documentation</li>
+                <li>Medication safety</li>
+                <li>Patient education</li>
+                <li>Team collaboration</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Professional Strengths</h4>
+              <ul>
+                <li>Compassionate communication</li>
+                <li>Critical thinking</li>
+                <li>Strong work ethic</li>
+                <li>Adaptability</li>
+                <li>Patient advocacy</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h4>References</h4>
+            <p>Available upon request.</p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Prepared for nursing school and professional application use.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
