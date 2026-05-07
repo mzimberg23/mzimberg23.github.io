@@ -8,28 +8,3 @@ if (navToggle && navigation) {
     navigation.classList.toggle('active');
   });
 }
-
-function updateRecommendationText(inputId, targetIds) {
-  const inputElement = document.getElementById(inputId);
-  if (!inputElement) return;
-
-  const updateTargets = () => {
-    const value = inputElement.value.trim() || `[${inputElement.placeholder}]`;
-    targetIds.forEach((targetId) => {
-      const target = document.getElementById(targetId);
-      if (target) {
-        target.textContent = value;
-      }
-    });
-  };
-
-  inputElement.addEventListener('input', updateTargets);
-  updateTargets();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  updateRecommendationText('recipient-name-input', ['recipient-name', 'recipient-greeting']);
-  updateRecommendationText('recipient-role-input', ['recipient-role']);
-  updateRecommendationText('facility-name-input', ['facility-name']);
-  updateRecommendationText('deadline-date-input', ['deadline-date']);
-});
